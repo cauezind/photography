@@ -1,0 +1,283 @@
+.lexend-exa{
+    font-family: "Lexend Exa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100pt;
+    font-style: normal;
+  }
+  
+  *{
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+   width: 100%;
+   height: 100px;
+   background-color: #453566;
+   position: sticky;
+   top: 0;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   z-index:1;
+  }
+  
+  header img{
+    background-size: 100%;
+    background-color: none;
+    width: 120px;
+    height: auto;
+    margin: 22px;
+    margin-left: 51px;
+  }
+  
+  #bar {
+    width: 3px;
+    height: 60px;
+    background-color: #d9d9d9;
+    opacity: 30%;
+    margin-left: 74px;
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  header h1{
+    margin-left: 74px;
+  }
+  
+  #open-menu{
+    padding: 5px;
+    position: absolute;
+    right: 51px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: transform 500ms ease-in-out 100ms, box-shadow 500ms ease-in-out;
+    border-radius: 15%;
+  }
+  
+  #open-menu div{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 4px;
+    border-radius: 25px;
+  }
+
+  #open-menu:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.75);
+    cursor: pointer;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section-1{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height: fit-content;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    margin-bottom: 20px;
+
+  }
+  
+  #carrossel{
+    width: 1058px;
+    height: 600px;
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    box-shadow: 0px 10px 20px -9px black;
+    background-image: url("./assets/carrossel\ 1.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.432);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;    
+  }
+
+  #carrossel div{
+    width: 60%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 40px;
+    
+
+  }
+
+  #carrossel div h2{
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+   }
+
+  h2{
+    color: #A33335;
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+  
+  .underline{
+    width: 570px;
+    height: 3px;
+    background-color: #A33335;
+    border-radius: 25px;
+    opacity: 50%;
+    margin-top: 18px;
+    margin-bottom: 70px;
+  }
+  
+  container{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+  
+  .project{
+    height: 545px;
+    width: 391px;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    /* Aplica a transição de transformação e sombra antes e depois do hover */
+    transition: transform 500ms ease-in-out 100ms, box-shadow 500ms ease-in-out;
+}
+
+.project:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 10px 20px -9px #453566;
+}
+  
+  .pic{
+    width: 421px;
+    height: 251px;
+    background-color: #d9d9d9
+  }
+  
+  h3{
+    font-family: "Lexend Exa", sans-serif;
+    font-size: 15px;
+    color: #453566;
+    margin-bottom: 40px;
+  }
+  
+  
+  footer{
+    height: 80px;
+    width: 100%;
+    background-color: #A33335;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  footer div {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    
+  }
+
+  footer div img{
+    width: 15px;
+    margin-bottom: 10px;
+  }
+
+  footer div h3 {
+    color: white;
+    font-size: 10px;
+  }
+
+  .modal {
+    /* Escondido por padrão */
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    width: 25%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: 0.2s ease-in-out;
+}
+
+/* Quando o modal estiver visível */
+#menu-modal.show .modal-content {
+  height: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+
+ul{
+  display: flex;
+  flex-direction: column;
+  height: 75%;
+  width: 100%;
+  justify-content: space-evenly;
+  transition: 0.5s ease-in-out;
+}
+
+li{
+    list-style: none; 
+}
+
+li a{
+    font-size: 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #453566;
+    font-family: "Montserrat";
+}
+
+/* Botão de fechar */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+}
